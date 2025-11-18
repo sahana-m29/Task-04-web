@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Website Example</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header */
+        header {
+            background: #333;
+            color: white;
+            padding: 15px 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            padding: 40px;
+            gap: 30px;
+        }
+
+        .hero img {
+            width: 50%;
+            border-radius: 10px;
+            max-width: 100%;
+        }
+
+        .hero-text {
+            width: 50%;
+        }
+
+        .hero-text h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+        }
+
+        /* Services Section */
+        .services {
+            display: flex;
+            gap: 20px;
+            padding: 40px;
+        }
+
+        .service-box {
+            flex: 1;
+            background: #f3f3f3;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        /* Footer */
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        /* ---------------------------- */
+        /* 📱 MOBILE RESPONSIVE SECTION */
+        /* ---------------------------- */
+
+        @media (max-width: 768px) {
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero img,
+            .hero-text {
+                width: 100%;
+            }
+
+            .hero-text h1 {
+                font-size: 28px;
+            }
+
+            .hero-text p {
+                font-size: 16px;
+            }
+
+            .services {
+                flex-direction: column;
+            }
+
+            .service-box {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <h2>My Website</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="https://via.placeholder.com/600x350" alt="Sample Image">
+        <div class="hero-text">
+            <h1>Make Your Website Mobile-Friendly</h1>
+            <p>Using CSS media queries, you can create layouts that adjust beautifully on any device.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="service-box">Responsive Layout</div>
+        <div class="service-box">Mobile-First Design</div>
+        <div class="service-box">Flexible Images</div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        © 2025 Responsive Web Design Example
+    </footer>
+
+</body>
+</html>
